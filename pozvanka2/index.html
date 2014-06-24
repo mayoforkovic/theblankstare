@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />  
+    <title>Blank Stare</title>
+    <style>
+      body {background: url(bg.png) no-repeat center center fixed black;}
+
+      .logo {width: 242px; height: 242px; position: relative; margin: 0 auto; margin-top: 100px}
+      .logo #iris {position: absolute; left: 0px; top: 0px;}
+      .logo #circlein {position: absolute; left: 0px; top: 0px;   -webkit-animation-name:             rotate; 
+        -webkit-animation-duration:         100s; 
+        -webkit-animation-iteration-count:  infinite;
+        -webkit-animation-timing-function: linear;}
+      .logo #circleout {position: absolute; left: 0px; top: 0px;   -webkit-animation-name:             rotate; 
+        -webkit-animation-duration:         100s; 
+        -webkit-animation-iteration-count:  infinite;
+        -webkit-animation-timing-function: linear;}
+      
+      #vimeo {text-align: center;}  
+      #vimeo iframe{margin: 0 auto;}
+      #about {width: 500px; margin: 0 auto; color: white; font-family: "Curier", monospace; font-size: 12px; padding: 40px 0px; overflow: hidden;}
+      #head {color: white; font-family: "Curier", monospace; font-size: 18px; padding: 40px 0px; font-weight: bold; text-align: left; width: 500px; margin: 0 auto;} 
+      #about a {color: white; font-weight: bold; font-size: 18px;}  
+      .fb-like {float: right;}
+      
+      @-webkit-keyframes rotate {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to { 
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+    </style>  
+  </head>  
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=137484483011426&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="logo">
+      <svg id="iris" ></svg>
+      <svg id="circlein"></svg>
+      <svg id="circleout"></svg>
+    </div>
+    <div id="vimeo">
+      <div id="head">#02 Cvernovka</div>
+      <iframe src="//player.vimeo.com/video/98272815?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div id="about">
+      Schyľuje sa k premiére. The Blank Stare už onedlho uvedie druhý diel dokumentu a pozýva všetkých poslucháčov, ktorým experimentalna hudba nie je ľahostajná. Predpremierovú sálu živými vystúpeniami zaplnia Angakok Θ., Filip Ruisl a Nuuttipukki. O afterparty sa postará Kosťo so&nbsp;svojim Dj-setom.<br/><br/>
+
+      Príbehy súčasnej slovenskej elektronickej a experimentálnej hudobnej scény otvorili svoju druhú kapitolou. Verejné nakrúcanie aktuálneho dielu dokumentu hosťovala bratislavská Cvernovka. Jedinečné industriálne priestory a život okolitých ateliérov boli nepochybne súčiniteľom pôsobivej atmosféry inovatívnej hudby. Improvizované koncerty a ich protagonisti podali ďalšiu správu o charaktere, šírke i&nbsp;kvalite experimentálnej tvorby, ktorá tu má svoju históriu. Aj&nbsp;neskúsený poslucháč sa mohol nechať viesť mnohovrstevnou zvukovou krajinou. Od zvukovej architektúry mikroruchov, pochádzajúcich z&nbsp;nástrojov Jonáša Grusku, cez chladnú púšť dronu dua Brada, levitujucim pohybom az k pobrežiu atmosférickeho ambientu Sky to Speak.<br/><br/>
+      <div class="fb-like" data-href="https://www.facebook.com/theblankstare" data-layout="button" data-action="like" data-show-faces="true" data-share="false" data-colorscheme="dark"></div>
+      <a href="https://www.facebook.com/events/322633724551603/">event</a> | <a href="https://www.facebook.com/theblankstare">fb</a> | <a href="http://www.theblankstare.net">www</a> | <a href="http://www.a4.sk/program/2014-06-27-20-00">A4</a>
+    </div>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script type="text/javascript" src="jquery.lazylinepainter-1.4.1.min.js"></script>
+    <script type="text/javascript" src="jquery.transit.js"></script>
+    <script type="text/javascript" src="lazydata.js"></script>
+    <script type="text/javascript" src="theme.js"></script>
+  </body>
+</html>
