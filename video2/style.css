@@ -1,4 +1,4 @@
-body {background: url(bg.png) no-repeat center center fixed black; color: white; font-family: "Curier", monospace; font-size: 12px; padding: 0px; margin: 0px;}
+body {background: url(bg.png) center center fixed black; color: white; font-family: "Curier", monospace; font-size: 12px; padding: 0px; margin: 0px;}
 
       .logo {width: 242px; height: 242px; position: relative; margin: 0 auto; margin-top: 100px}
       .logo #iris {position: absolute; left: 0px; top: 0px;}
