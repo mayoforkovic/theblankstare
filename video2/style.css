@@ -1,0 +1,56 @@
+body {background: url(bg.png) no-repeat center center fixed black; color: white; font-family: "Curier", monospace; font-size: 12px; padding: 0px; margin: 0px;}
+
+      .logo {width: 242px; height: 242px; position: relative; margin: 0 auto; margin-top: 100px}
+      .logo #iris {position: absolute; left: 0px; top: 0px;}
+      .logo #circlein {position: absolute; left: 0px; top: 0px;   -webkit-animation-name:             rotate; 
+        -webkit-animation-duration:         100s; 
+        -webkit-animation-iteration-count:  infinite;
+        -webkit-animation-timing-function: linear;}
+      .logo #circleout {position: absolute; left: 0px; top: 0px;   -webkit-animation-name:             rotate; 
+        -webkit-animation-duration:         100s; 
+        -webkit-animation-iteration-count:  infinite;
+        -webkit-animation-timing-function: linear;}
+      
+      #vimeo {text-align: center;}  
+      #vimeo iframe{margin: 0 auto;}
+      #about, #moar {width: 500px; margin: 0 auto;  padding: 40px 0px; padding-bottom: 50px; overflow: hidden;}
+      #head {color: white; font-family: "Curier", monospace; font-size: 18px; padding: 40px 0px; font-weight: bold; text-align: left; width: 500px; margin: 0 auto;} 
+      #about a, #moar a {color: white; font-weight: bold; font-size: 18px;}  
+      .fb-like {float: right;}
+      
+      @-webkit-keyframes rotate {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+        to { 
+          -webkit-transform: rotate(-360deg);
+        }
+      }
+
+  a{color: white;}
+
+ #profiles{
+   width: 500px; margin: 0 auto; 
+ }
+ .profil{
+   padding-top: 50px; margin-bottom: 0px;
+ }
+ .gifs{
+   float: left; width: 200px; margin-right: 30px;
+ }
+ .gifs img{
+   display: block; width: 100%; 
+ }
+ .gifs img:nth-child(1){
+   margin-bottom: 10px;
+ }
+ .vata {
+   margin-bottom: 30px;
+ }
+ .vata img{
+   width: 50%; float: left;
+ }
+  .profil:after,
+  .vata:after{
+    content: " "; width: 1px; height: 0px; display: block; clear: both;
+  }
