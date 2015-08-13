@@ -4,9 +4,9 @@ float oldX, oldY;
  
 int maxLifespan = 120;
 float taper = 60.0;
-float noiseScale = 0.001;
-int particleCount = 150;
-int generationsPerFrame = 50;
+float noiseScale = 0.05;
+int particleCount = 100;
+int generationsPerFrame = 150;
 float frameOffset = 0.0;
  
 void setup()
@@ -16,7 +16,7 @@ void setup()
   x = new float[particleCount];
   y = new float[particleCount];
   lifespan = new int[particleCount];
-  background(255);
+  background(100);
 }
    
 void draw()
@@ -25,9 +25,10 @@ void draw()
   noFill();
   strokeWeight(1.0);
   strokeCap(SQUARE);
-  stroke(0, 0, 0, 20);
+  stroke(34, 233, 203, 10);
   for(int gen=0; gen < generationsPerFrame; gen++)
   {
+    
     for(int i=0; i < particleCount; i++)
     {
       oldX = x[i];
@@ -54,10 +55,8 @@ void draw()
  
 void mousePressed()
 {
-  background(255);
+  background(100);
   frameOffset = random(10.0);
-  noiseScale = 0.0005 + random(0.007);
+  noiseScale = noiseScale + random(0.007);
    
 }
-
-
