@@ -55,7 +55,7 @@ void draw()
  
 void mousePressed()
 {
-  background(100);
+  //background(100);
   frameOffset = random(10.0);
   noiseScale = noiseScale + random(0.007);
    
