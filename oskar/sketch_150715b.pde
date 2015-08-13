@@ -4,7 +4,7 @@ float oldX, oldY;
  
 int maxLifespan = 120;
 float taper = 60.0;
-float noiseScale = 0.05;
+float noiseScale = 0.0005;
 int particleCount = 100;
 int generationsPerFrame = 150;
 float frameOffset = 0.0;
