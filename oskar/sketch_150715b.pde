@@ -25,7 +25,7 @@ void draw()
   noFill();
   strokeWeight(1.0);
   strokeCap(SQUARE);
-  stroke(34, 233, 203, 10);
+  stroke(200, 200, 200, 10);
   for(int gen=0; gen < generationsPerFrame; gen++)
   {
     
